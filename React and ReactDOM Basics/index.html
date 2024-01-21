@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Template</title>
+    <style>
+      body {
+        font-family: ROG Fonts, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #root {
+        text-align: center;
+      }
+      p {
+        font-size: 50px;
+        color: #090909;
+        background-position: 20px;
+        box-shadow: rgb(255, 5, 5) 0px 5px 15px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>
+<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+      // Step 1: Create React Element
+      let element = React.createElement('p', null, 'Seize the day');
+
+
+      // Step 2: Render with ReactDOM
+      ReactDOM.render(element, document.getElementById('root'));
+
+</script>
